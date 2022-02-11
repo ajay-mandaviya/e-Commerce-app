@@ -12,7 +12,9 @@ body {
   --blue-color: #3b82f6;
   --light-grey: #eaeaec;
   --dark-grey: #d8d8da;
+  --black: #000000;
   --white: #ffffff;
+  --text-color: #374151;
 }
 
 .flex-row {
@@ -47,7 +49,7 @@ header {
   align-items: center;
   border: 2px solid gray;
   border-radius: 5px;
-  padding: 3px;
+  padding: 4px;
 }
 
 .search-input i {
@@ -94,7 +96,7 @@ header {
   position: absolute;
   top: -10px !important;
   right: 5px !important;
-  color: black;
+  color: var(--black);
   font-weight: bold;
   height: 1rem;
   width: 1rem;
@@ -117,13 +119,11 @@ header {
 
 .category-container {
   padding: 1rem;
-  /* margin-top: 5rem 1rem; */
   padding-top: 1rem;
   display: grid;
   max-width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
-  /* margin: 1rem 1rem; */
   justify-content: center;
 }
 .category-item {
@@ -158,7 +158,7 @@ header {
 .text-heading-container h1 {
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #374151;
+  border-bottom: 1px solid var(--text-color);
   line-height: 0.1em;
   margin: 10px 0 20px;
 }
@@ -166,7 +166,7 @@ header {
 h1 span {
   background: var(--white);
   padding: 0 10px;
-  color: #374151;
+  color: var(--text-color);
 }
 .more-item {
   display: flex;
@@ -188,7 +188,7 @@ h1 span {
   align-items: center;
 }
 .card-subtitle {
-  color: #374151;
+  color: var(--text-color);
   font-weight: bold;
 }
 
@@ -218,7 +218,7 @@ h3 {
   position: absolute;
   top: 0;
   right: 0;
-  background: #111827;
+  background: var(--text-color);
   padding: 0.4rem;
   color: var(--white);
   font-size: 0.75rem;
