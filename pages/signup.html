@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>Men's Shop</h2>
+      </div>
+      <div class="search-input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search...." />
+      </div>
+      <div class="header-profile">
+        <diqv class="nav-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-desktop">
+          <button class="header-btn"
+          onclick="location.href = './pages/Login.html' "
+          >Login</button>
+          <div class="badge-container">
+            <i class="text-gray fa-solid fa-heart"></i>
+            <div class="badge-notification flex-center">5</div>
+          </div>
+          <div class="badge-container ">
+            <i class="text-gray fa-solid fa-cart-shopping"></i>
+            <div class="badge-notification flex-center ">10</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="login-page">
+      <div class="login-container">
+        <div class="login-header">
+          <h2>Sign Up</h2>
+        </div>
+        <div class="login-input-container">
+          <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input type="text" placeholder="Enter your Email" id="emailInput" />
+          </div>
+          <div class="form-group">
+            <label for="passwordInput">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your Password"
+              id="passwordInput"
+            />
+          </div>
+          <div class="user-option">
+            <div>
+              <input type="checkbox" name="" id="save-chechkbox" />
+              <label for="save-chechkbox">Accept all Terms & Condition</label>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="login-btn">Create New Account</button>
+          </div>
+          <div
+            class="check-account flex"
+            onclick="location.href = './Login.html' "
+          >
+            <p>Already have an account</p>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
