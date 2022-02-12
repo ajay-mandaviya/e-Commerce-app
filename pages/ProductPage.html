@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/productpage.css">
+    <link rel="stylesheet" href="https://easy-ui-css.netlify.app/style.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <header>
+      <div class="logo">
+        <h2>Men's Shop</h2>
+      </div>
+      <div class="search-input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search...." />
+      </div>
+      <div class="header-profile">
+        <diqv class="nav-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-desktop">
+          <button class="header-btn"
+          onclick="location.href = './pages/Login.html' "
+          >Login</button>
+          <div class="badge-container">
+            <i class="text-gray fa-solid fa-heart"></i>
+            <div class="badge-notifications flex-center">5</div>
+          </div>
+          <div class="badge-container ">
+            <i class="text-gray fa-solid fa-cart-shopping"></i>
+            <div class="badge-notifications flex-center ">10</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- page -->
+    <div class="main-container">
+      <aside>
+        <div class="sidebar-filters filter-head">
+          <h3>Filters</h3>
+          <button class="clear-button text-bold">Clear</button>
+        </div>
+        <div class="filter-section">
+          <p class="text-bold">Category</p>
+          <div>
+            <label class="filters">
+              <input type="checkbox" /> Men Tshirt
+            </label>
+          </div>
+          <div>
+            <label class="filters"> <input type="checkbox" /> Men Shirt </label>
+          </div>
+          <div>
+            <label class="filters">
+              <input type="checkbox" checked /> Jacket
+            </label>
+          </div>
+          <div>
+            <label class="filters"> <input type="checkbox" /> All </label>
+          </div>
+        </div>
+
+        <div class="sidebar-filters">
+          <p class="text-bold">Price</p>
+          <div class="prices">
+            <p>100</p>
+            <p>500</p>
+            <p>100</p>
+          </div>
+          <input type="range" min="100" max="1000" value="200" id="#myinput" />
+        </div>
+
+        <div class="sidebar-filters">
+          <p class="text-bold">Sort By</p>
+          <div>
+            <input type="radio" name="" id="" checked /><label for=""
+              >Price-Low to High</label
+            >
+          </div>
+
+          <div>
+            <input type="radio" name="" id="" /><label for=""
+              >Price-Low to High</label
+            >
+          </div>
+        </div>
+        <div class="sidebar-filters">
+          <p class="text-bold">Rating</p>
+          <div>
+            <input
+              type="radio"
+              name="rating"
+              value="four-star"
+              id="four-star"
+              checked
+            /><label for="four-star"> 4 Stars & above </label>
+          </div>
+          <div>
+            <input type="radio" name="rating" id="three-star" /><label
+              for="three-star"
+              >3 Stars & above</label
+            >
+          </div>
+          <div>
+            <input type="radio" name="rating" id="two-star" /><label
+              for="two-star"
+              >2 Stars & above</label
+            >
+          </div>
+          <div>
+            <input type="radio" name="rating" id="one-star" /><label
+              for="one-star"
+              >1 Stars & above</label
+            >
+          </div>
+        </div>
+      </aside>
+
+      <!-- Grid Component -->
+      <main class="product-grid">
+        <!-- Cards -->
+
+        <!-- first -->
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <button class="btn-badge"><i class="fas fa-heart"></i></button>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <span class="tag-badge">New</span>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <span class="tag-badge">New</span>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <span class="tag-badge">New</span>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <button class="btn-badge"><i class="fas fa-heart"></i></button>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <button class="btn-badge"><i class="fas fa-heart"></i></button>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <button class="btn-badge"><i class="fas fa-heart"></i></button>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <span class="tag-badge">New</span>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <span class="tag-badge">New</span>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <span class="tag-badge">New</span>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <button class="btn-badge"><i class="fas fa-heart"></i></button>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <button class="btn-badge"><i class="fas fa-heart"></i></button>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="card">
+          <div class="card-img">
+            <img src="../assets/image 1.png" alt="" class="responsive-img" />
+          </div>
+          <div class="card-description">
+            <div class="card-info">
+              <h2 class="card-title">Jacket</h2>
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">
+                <h4>&#x20b9; 2000</h4>
+              </div>
+            </div>
+            <button class="card-btn">Add to cart</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
