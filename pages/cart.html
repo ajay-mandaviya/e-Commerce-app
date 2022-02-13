@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/cart.css" />
+    <link rel="stylesheet" href="https://easy-ui-css.netlify.app/style.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>My Cart</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="logo">
+        <h2>Men's Shop</h2>
+      </div>
+      <div class="search-input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search...." />
+      </div>
+      <div class="header-profile">
+        <diqv class="nav-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-desktop">
+          <button class="header-btn"
+          onclick="location.href = './pages/Login.html' "
+          >Login</button>
+          <div class="badge-container">
+            <i class="text-gray fa-solid fa-heart"></i>
+            <div class="badge-notifications flex-center">5</div>
+          </div>
+          <div class="badge-container ">
+            <i class="text-gray fa-solid fa-cart-shopping"></i>
+            <div class="badge-notifications flex-center ">10</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- cart page -->
+    <div class="cart-page">
+      <div>
+        <h2 class="text-bold text-center">My Cart</h2>
+      </div>
+     
+
+      <div class="cart-container">
+         <!--  card grids -->
+        <div class="cart-card-grid">
+          <div class="card-horizontal">
+            <div class="card-img">
+              <img src="../assets/image 1.png" alt="" class="responsive-img" />
+            </div>
+
+            <div class="card-horizontal-description text-bold">
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div>
+                <p class="card-off-rate text-bold">50% off</p>
+              </div>
+              <div class="price">
+                <h3>&#x20b9; 2000</h3>
+                <span class="off-price">&#x20b9; 3999</span>
+              </div>
+              <div class="manage-item flex">
+                <span>Quantity</span>
+                <div class="manage-item-buttons">
+                  <button class="">-</button>
+                  <span>10</span>
+                  <button>+</button>
+                </div>
+              </div>
+
+              <div class="card-btns">
+                <button class="card-btn">Remove From Cart</button>
+                <button class="card-btn-outline">Move to Wishlist</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- second -->
+
+          <div class="card-horizontal">
+            <div class="card-img">
+              <img src="../assets/image 1.png" alt="" class="responsive-img" />
+            </div>
+
+            <div class="card-horizontal-description text-bold">
+              <span class="card-subtitle">Men's Quilted Bomber Jacket</span>
+              <div>
+                <p class="card-off-rate text-bold">50% off</p>
+              </div>
+              <div class="price">
+                <h3>&#x20b9; 2000</h3>
+                <span class="off-price">&#x20b9; 3999</span>
+              </div>
+              <div class="manage-item flex">
+                <span>Quantity</span>
+                <div class="manage-item-buttons">
+                  <button class="">-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+
+              <div class="card-btns">
+                <button class="card-btn">Remove From Cart</button>
+                <button class="card-btn-outline">Move to Wishlist</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- summary card -->
+
+        <div class="summary-card">
+          <div class="price-details">
+            <h4 class="text-bold">PRICE DETAILS</h4>
+            <hr>
+            <div class="flex-between">
+                <p>Price </p>
+                <p>2000 </p>
+            </div>
+            <div class="flex-between">
+                <p class="discount text-bold">Discount </p>
+                <p class="discount text-bold">-1999 </p>
+            </div>
+            <div class="flex-between">
+                <p>Delivery charges </p>
+                <p> 499 </p>
+            </div>
+            <hr>
+            <div class="flex-between">
+                <p class="text-bold">TOTAL AMOUNT</p>
+                <p class="text-bold">3499</p>
+            </div>
+            <hr>
+             <p>You will save <strong> Rs. 1999</strong> on this order</p>
+            <button class="order-button">Place order</button>
+        </div>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
